@@ -1,12 +1,17 @@
 
 body {
     background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
 }
 #cajaexterior {
-    margin: 0%;
+    margin: 0;
     border-radius: 10px;
-    width: 500px;
-    height: 550px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     display:grid ;
     justify-content: flex-start;
     align-items: stretch;
@@ -14,15 +19,15 @@ body {
     align-content: center;
     padding: 20px 0px 20px 0px;
     border: 1px;
+    overflow: hidden;
 
 }
-#imagen {
-    
-}
-img {
+
+#imagen img {
 width: 100%;
 height: 100%;
-object-fit: cover
+object-fit: cover;
+display: block;
 }
  
 #cajahead {
@@ -31,10 +36,10 @@ object-fit: cover
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     border: 1px;
     border-color: black;
-    font-size: 30px;
+    font-size: 24px;
     margin:1%;
     
 } 
@@ -44,26 +49,47 @@ object-fit: cover
     align-items: center;
     padding: 0% 20px 0px 20px;
     font-size: 25px;
+    margin-bottom: 15px;
     
 
 }
 #iconhead1 {
-        display: flex;
-        }
-        #iconhtml{
-            align-content: center;
-                size: 80px;
-                }
-                #textoshead {
-                    flex-direction: row;
-                        margin: 0%;
-                            padding: 0%;
-                                align-content: center;
-                                    
-                                    }
-                                    .parr1, .parr2  {
-                                        align-items: flex-end  ;
-                                            margin: 0%;
-                                                font-size:xx-small;
-                                                }
+display: flex;
+align-items: center;
+gap: 15px;
+}
+#iconhtml{
+align-content: center;
+font-size: 30px;
+}
+
+#textoshead {
+flex-direction: column;
+margin: 0%;
+padding: 0%;
+align-content: center;
+display: flex;
+}
+
+.parr1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.parr2 {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+#cajafoot {
+    padding: 15px 20px;
+}
+#iconfoot1 i {
+    margin-right: 15px;
+
+#texto1 p, #texto2 p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
 }
