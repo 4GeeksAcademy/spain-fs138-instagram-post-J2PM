@@ -87,9 +87,9 @@ display: flex;
 }
 #iconfoot1 i {
     margin-right: 15px;
-
+}
 #texto1 p, #texto2 p {
     margin: 5px 0;
     font-size: 14px;
     line-height: 1.5;
-}
+ }
